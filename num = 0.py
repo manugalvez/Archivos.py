@@ -60,7 +60,11 @@ num=14
 for i in range(5):
     pas=int(input("Ingrese una contraseña: "))
     if pas==num:
-        print("Su número es muy bajo")
+        print("Su número es correcto, el número es: ",num)
         break
-    else:
-        print("Su número es muy alto")
+    if pas > num:
+        print("Su número es mayor, baje un poco más")
+    if pas < num:
+        print("Su número es menor, suba un poco más")
+        
+print("Fin")
